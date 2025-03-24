@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.css">
     <!-- Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,10 +23,10 @@
             <div>
                 <a href="#" class="btn btn-dark rounded head-btn-mob">Button</a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" id="nav-men" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center s-nav tran" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Link One</a>
@@ -46,6 +48,9 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="men-cl dis">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
             </div>
             
             <div>
@@ -117,7 +122,7 @@
     </section> -->
     
     <!-- Trust Badge Section -->
-    <section class="trust-badge">
+    <!-- <section class="trust-badge">
         <div class="container">
             <h4>Trusted by the industry's leading companies</h4>
             <div class="logo-container">
@@ -143,16 +148,80 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="partner-section">
+        <div class="container">
+            <h3>Trusted by the industry's leading companies</h3>
+            
+            <div class="swiper logo-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Logo 1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/1.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/2.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/3.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 4 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/4.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 5 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/5.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 6 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/6.png" alt="Company Logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/1.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/2.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/3.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 4 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/4.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 5 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/5.png" alt="Company Logo">
+                    </div>
+                    <!-- Logo 6 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/trusted/6.png" alt="Company Logo">
+                    </div>
+                    <!-- Add more logos as needed -->
+                </div>
+                
+                <!-- Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
     </section>
     
     <!-- Welcome Section -->
     <section class="welcome-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5"  data-aos="fade-left"     data-aos-delay="50"
+                data-aos-duration="1000">
                     <h2 class="welcome-title">Welcome to<br>SAGA Cubic Space</h2>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7"  data-aos="fade-right"     data-aos-delay="50"
+                data-aos-duration="1000">
                     <p class="welcome-text">
                         SAGA Cubic Space is one of the leading manufacturers of Prefabricated Building & Portables 
                         Houses Factories in Saudi Arabia, which offers various products with a full capability of serving 
@@ -193,26 +262,28 @@
         </div>
         
         <div class="row mt-5">
-            <div class="col-md-4">
+            <div class="col-md-4"  data-aos="fade-down-left"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="stats-container">
                     <div class="stat-item mb-4">
-                        <h3 class="stat-number fw-bold">230+</h3>
+                        <h3 class="stat-number fw-bold"><span class="counter" data-count="230">0</span>+</h3>
                         <p class="stat-label">Projects finished</p>
                     </div>
                     
                     <div class="stat-item mb-4">
-                        <h3 class="stat-number fw-bold">99%</h3>
+                        <h3 class="stat-number fw-bold"><span class="counter" data-count="99">0</span>%</h3>
                         <p class="stat-label">Clients Satisfied</p>
                     </div>
                     
                     <div class="stat-item">
-                        <h3 class="stat-number fw-bold">15+</h3>
+                        <h3 class="stat-number fw-bold"><span class="counter" data-count="15">0</span>+</h3>
                         <p class="stat-label">Years of Experience</p>
                     </div>
                 </div>
             </div>
             
-            <div class="col-md-8">
+            <div class="col-md-8"  data-aos="zoom-in"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="why-choose-image">
                     <img src="assets/images/1.jpg" alt="Prefab Buildings Factory" class="img-fluid rounded">
                 </div>
@@ -234,7 +305,8 @@
         
         <div class="row">
             <!-- Product 1 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4"  data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Prefab Container" class="img-fluid">
@@ -246,12 +318,13 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
             
             <!-- Product 2 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Product Image Placeholder" class="img-fluid">
@@ -263,12 +336,13 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
             
             <!-- Product 3 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Product Image Placeholder" class="img-fluid">
@@ -280,12 +354,13 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
             
             <!-- Product 4 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Product Image Placeholder" class="img-fluid">
@@ -297,12 +372,13 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
             
             <!-- Product 5 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Product Image Placeholder" class="img-fluid">
@@ -314,12 +390,13 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
             
             <!-- Product 6 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Product Image Placeholder" class="img-fluid">
@@ -331,12 +408,13 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
             
             <!-- Product 7 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Product Image Placeholder" class="img-fluid">
@@ -348,12 +426,13 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
             
             <!-- Product 8 -->
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-md-3 col-6 mb-4" data-aos="zoom-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="product-card">
                     <div class="product-image mb-3">
                         <img src="assets/images/product.jpg" alt="Product Image Placeholder" class="img-fluid">
@@ -365,7 +444,7 @@
                         </div>
                         <div class="product-price fw-bold">$55</div>
                     </div>
-                    <button class="btn btn-outline-dark w-100 mt-2">Add to cart</button>
+                    <button class="btn btn-outline-dark w-100 mt-2">View Product</button>
                 </div>
             </div>
         </div>
@@ -382,7 +461,8 @@
         
         <div class="row">
             <!-- Project 1 -->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4" data-aos="fade-in-up"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="project-card">
                     <div class="project-image mb-3">
                         <img src="assets/images/1.jpg" alt="Prefab Buildings Project" class="img-fluid rounded">
@@ -399,7 +479,8 @@
             </div>
             
             <!-- Project 2 -->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4" data-aos="fade-in-down"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="project-card">
                     <div class="project-image mb-3">
                         <img src="assets/images/2.jpg" alt="Prefab Buildings Project" class="img-fluid rounded">
@@ -423,7 +504,8 @@
 </section>
 
 <!-- How to Work With Us Section -->
-<section class="process-section">
+<section class="process-section" data-aos="flip-up"     data-aos-delay="50"
+data-aos-duration="1000">
     <div class="container">
         <h2 class="section-heading">How to work with us</h2>
         
@@ -549,7 +631,8 @@
         
         <div class="row" id="blog-container">
             <!-- Blog Card 1 -->
-            <div class="col-md-6 col-lg-6 blog-item" data-category="one">
+            <div class="col-md-6 col-lg-6 blog-item" data-category="one" data-aos="zoom-in-down"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="blog-card">
                     <img src="assets/images/1.jpg" alt="Blog Image" class="blog-image">
                     <span class="blog-category">Category one</span>
@@ -572,7 +655,8 @@
             </div>
             
             <!-- Blog Card 2 -->
-            <div class="col-md-6 col-lg-6 blog-item" data-category="two">
+            <div class="col-md-6 col-lg-6 blog-item" data-category="two" data-aos="zoom-in-down"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="blog-card">
                     <img src="assets/images/2.jpg" alt="Blog Image" class="blog-image">
                     <span class="blog-category">Category two</span>
@@ -595,7 +679,8 @@
             </div>
             
             <!-- Blog Card 3 -->
-            <div class="col-md-6 col-lg-6 blog-item" data-category="three">
+            <div class="col-md-6 col-lg-6 blog-item" data-category="three" data-aos="zoom-in-down"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="blog-card">
                     <img src="assets/images/1.jpg" alt="Blog Image" class="blog-image">
                     <span class="blog-category">Category three</span>
@@ -618,7 +703,8 @@
             </div>
             
             <!-- Blog Card 4 -->
-            <div class="col-md-6 col-lg-6 blog-item" data-category="four">
+            <div class="col-md-6 col-lg-6 blog-item" data-category="four" data-aos="zoom-in-down"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="blog-card">
                     <img src="assets/images/2.jpg" alt="Blog Image" class="blog-image">
                     <span class="blog-category">Category four</span>
@@ -641,7 +727,8 @@
             </div>
             
             <!-- Blog Card 5 -->
-            <div class="col-md-6 col-lg-6 blog-item" data-category="one">
+            <div class="col-md-6 col-lg-6 blog-item" data-category="one" data-aos="zoom-in-down"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="blog-card">
                     <img src="assets/images/2.jpg" alt="Blog Image" class="blog-image">
                     <span class="blog-category">Category one</span>
@@ -664,7 +751,8 @@
             </div>
             
             <!-- Blog Card 6 -->
-            <div class="col-md-6 col-lg-6 blog-item" data-category="two">
+            <div class="col-md-6 col-lg-6 blog-item" data-category="two" data-aos="zoom-in-down"     data-aos-delay="50"
+            data-aos-duration="1000">
                 <div class="blog-card">
                     <img src="assets/images/1.jpg" alt="Blog Image" class="blog-image">
                     <span class="blog-category">Category two</span>
@@ -818,6 +906,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="assets/js/main.js"></script>
 
 </body>
