@@ -103,7 +103,7 @@ body {
     background-color: #fff;
     z-index: 1001;
   }
-  .collapse:not(.show) {
+  .navbar .collapse:not(.show) {
     display: block !important;
   }
   .dis {
@@ -380,6 +380,11 @@ body {
   padding: 70px 0;
 }
 
+.welcome-section .image img{
+  max-width: 100%;
+  border-radius: 20px;
+}
+
 .welcome-title {
   font-size: 2rem;
   font-weight: 700;
@@ -412,6 +417,10 @@ body {
 
 .feature-value {
   color: #777;
+}
+
+.accordion-button:focus{
+  box-shadow: none;
 }
 
 /* Why Choose to Work with Us Section */
